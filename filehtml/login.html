@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #frm1 {
+            width: 600px;
+            margin: auto;
+            border: 2px solid darkslategrey;
+            padding: 10px;
+        }
+
+        #frm1 label {
+            color: darkslategrey;
+            width: 120px;
+            display: inline-block;
+        }
+
+        #frm1 button {
+            width: 120px;
+            height: 30px;
+            margin: auto;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #frm1 .text {
+            width: 200px;
+            border: 1px solid darkmagenta;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<form id="frm1" method="post">
+    <p><label><b>Tài Khoản</b></label><input id="taikhoan" class="text" type="text" placeholder="Tài khoản đăng nhập">
+    </p><br>
+    <p><label><b> Mật khẩu</b></label><input id="matkhau" class="text" type="password" placeholder="Hãy nhập mật khẩu">
+    </p>
+    <button type="submit" onclick="dangNhap()">Login</button>
+</form>
+
+<body>
+<script type="text/javascript">
+    function Redirect() {
+        document.getElementById("frm1").action = "index.html"
+
+    }
+
+    function dangNhap() {
+        let Login = document.getElementById("taikhoan").value;
+        let pass = document.getElementById("matkhau").value;
+        if ((Login === "thinhlcvn") && (pass === "1")) {
+            Redirect();
+        } else {
+            alert("Đăng nhập thất bại")
+        }
+    }
+
+</script>
+</body>
+</html>

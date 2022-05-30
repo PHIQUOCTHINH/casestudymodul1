@@ -1,0 +1,31 @@
+table td {
+    background-color: black;
+    border: 1px solid black;
+}
+header {
+background-image: url("https://cdn3.dhht.vn/wp-content/uploads/2017/08/CASIO-EFB-504JL-1ADR-00005.jpg");
+    background-size: auto;
+    width: 100%;
+
+}
+.top { background-color: darkgrey;
+    text-align: center;
+}
+*{
+    font-family: "Baloo Chettan 2",cursive;
+    color: whitesmoke;
+}
+#information {
+    background-color: #4ca2cd;
+    text-align: center;
+}
+.header-top {
+   margin-right: 1000px;
+
+}
+img:hover {
+    transform: scale(1.04);
+    border-radius: 40%;
+}
+
+
